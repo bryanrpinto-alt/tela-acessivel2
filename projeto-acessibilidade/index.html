@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acessibilidade para Todos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  
+    <div id="reading-guide" class="reading-guide hidden"></div>
+
+    
+    <button id="toggle-panel-btn" class="access-trigger-btn" aria-label="Abrir Painel de Acessibilidade">
+        ♿ Acessibilidade
+    </button>
+
+ 
+    <aside id="accessibility-panel" class="access-panel hidden" aria-label="Painel de Opções de Acessibilidade">
+        <div class="panel-header">
+            <h2>Painel de Acessibilidade</h2>
+            <button id="close-panel-btn" class="close-btn" aria-label="Fechar Painel">&times;</button>
+        </div>
+        
+        <div class="panel-body">
+           
+            <div class="control-group">
+                <label>Tamanho do Texto:</label>
+                <div class="btn-group">
+                    <button id="btn-increase-font" class="panel-btn">A+</button>
+                    <button id="btn-decrease-font" class="panel-btn">A-</button>
+                    <button id="btn-reset-font" class="panel-btn">Normal</button>
+                </div>
+            </div>
+
+        
+            <div class="control-group">
+                <button id="btn-high-contrast" class="panel-btn toggle-btn">Alto Contraste</button>
+            </div>
+
+     
+            <div class="control-group">
+                <button id="btn-dark-mode" class="panel-btn toggle-btn">Modo Escuro</button>
+            </div>
+
+            
+            <div class="control-group">
+                <button id="btn-grayscale" class="panel-btn toggle-btn">Escala de Cinza</button>
+            </div>
+
+           
+            <div class="control-group">
+                <button id="btn-readable-font" class="panel-btn toggle-btn">Fonte Legível</button>
+            </div>
+
+      
+            <div class="control-group">
+                <button id="btn-highlight-links" class="panel-btn toggle-btn">Destacar Links</button>
+            </div>
+
+          
+            <div class="control-group">
+                <button id="btn-reading-guide" class="panel-btn toggle-btn">Guia de Leitura</button>
+            </div>
+
+     
+            <div class="control-group">
+                <button id="btn-spacing" class="panel-btn toggle-btn">Aumentar Espaçamento</button>
+            </div>
+
+            <hr>
+            <button id="btn-reset-all" class="panel-btn reset-btn">Redefinir Tudo</button>
+        </div>
+    </aside>
+
+    <header class="site-header">
+        <h1>Acessibilidade para Todos</h1>
+        <p>Promovendo a inclusão e o acesso livre à informação na Web.</p>
+    </header>
+
+    <nav class="site-nav">
+        <ul>
+            <li><a href="#sobre">Sobre o Projeto</a></li>
+            <li><a href="#importancia">Importância</a></li>
+            <li><a href="#diretrizes">Diretrizes WCAG</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main class="content-container">
+        <section id="sobre" class="card">
+            <h2>O que é Acessibilidade Web?</h2>
+            <p>A acessibilidade Web significa garantir que todas as pessoas, incluindo pessoas com deficiências visuais, motoras, auditivas ou cognitivas, possam navegar, compreender e interagir com as páginas da internet de maneira autônoma e eficiente.</p>
+        </section>
+
+        <section id="importancia" class="card">
+            <h2>Por que a Acessibilidade é Importante?</h2>
+            <p>A internet tornou-se um serviço essencial para estudo, trabalho, entretenimento e serviços cidadãos. Criar um site acessível não é apenas uma boa prática técnica, mas uma responsabilidade social que garante direitos iguais na era digital.</p>
+            <p>Para saber mais sobre padrões globais, visite a página do <a href="https://www.w3.org/WAI/" target="_blank" rel="noopener">W3C Web Accessibility Initiative (WAI)</a>.</p>
+        </section>
+
+        <section id="diretrizes" class="card">
+            <h2>Princípios da WCAG (Web Content Accessibility Guidelines)</h2>
+            <ul>
+                <li><strong>Perceptível:</strong> A informação deve ser apresentada aos usuários de formas que eles possam perceber.</li>
+                <li><strong>Operável:</strong> Os componentes de interface e a navegação devem ser operáveis por todos.</li>
+                <li><strong>Compreensível:</strong> A informação e o funcionamento da interface devem ser compreensíveis.</li>
+                <li><strong>Robusto:</strong> O conteúdo deve ser robusto o suficiente para ser interpretado por diversos agentes do usuário.</li>
+            </ul>
+        </section>
+
+        <section id="contato" class="card">
+            <h2>Fale Conosco</h2>
+            <p>Dúvidas ou sugestões para melhorar a acessibilidade do nosso portal? <a href="mailto:contato@acessibilidade.org">Envie um e-mail para nossa equipe</a>.</p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Acessibilidade para Todos. Projeto Acadêmico de Front-end.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
